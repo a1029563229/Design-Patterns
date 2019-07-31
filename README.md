@@ -46,7 +46,7 @@
 + [Strategy](https://github.com/a1029563229/Design-Patterns/tree/master/src/Strategy)
 
 ### 单一职责：
-+ [Strategy](https://github.com/a1029563229/Design-Patterns/tree/master/src/Decorator)
++ [Decorator](https://github.com/a1029563229/Design-Patterns/tree/master/src/Decorator)
 <!-- ### 单一职责：
 + [Decorator](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator)
 + [Decorator(Head-First版)](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator-Pattern)
