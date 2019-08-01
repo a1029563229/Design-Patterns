@@ -47,6 +47,7 @@
 
 ### 单一职责：
 + [Decorator](https://github.com/a1029563229/Design-Patterns/tree/master/src/Decorator)
++ [Bridge](https://github.com/a1029563229/Design-Patterns/tree/master/src/Bridge)
 <!-- ### 单一职责：
 + [Decorator](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator)
 + [Decorator(Head-First版)](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator-Pattern)
