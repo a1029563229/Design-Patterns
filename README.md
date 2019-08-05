@@ -51,6 +51,7 @@
 
 ### 对象创建
 + [Factory Method](https://github.com/a1029563229/Design-Patterns/tree/master/src/FatoryMethod)
++ [Abstract Method](https://github.com/a1029563229/Design-Patterns/tree/master/src/AbstractMethod)
 <!-- ### 单一职责：
 + [Decorator](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator)
 + [Decorator(Head-First版)](https://github.com/liu-jianhao/Cpp-Design-Patterns/tree/master/Decorator-Pattern)
