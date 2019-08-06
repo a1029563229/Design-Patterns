@@ -3,11 +3,14 @@ package AbstractFactory;
 abstract class IDBConnection {
 	protected String name;
 	protected String password;
+	protected abstract String getName();
+	protected abstract String getPassword();
 };
 
 abstract class IDBCommand {
 	protected String message;
 	protected abstract int connection(IDBConnection connection);
+	protected abstract String getMessage();
 };
 
 abstract class IDBReader {
@@ -28,21 +31,34 @@ class SqlConnection extends IDBConnection {
 		this.name = name;
 		this.password = password;
 	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public String getPassword() {
+		return this.password;
+	}
 }
 
 class SqlCommand extends IDBCommand {
 	public String message;
 	
 	protected int connection(IDBConnection connection) {
-		System.out.println(connection.name);
-		this.message = connection.name + "@" + connection.password;
+		String name = connection.getName();
+		String password = connection.getPassword();
+		this.message = name + "@" + password;
 		return 0;
+	}
+	
+	public String getMessage() {
+		return this.message;
 	}
 }
 
 class SqlReader extends IDBReader {
 	protected String read(IDBCommand command) {
-		return command.message;
+		return command.getMessage();
 	}
 }
 
@@ -65,6 +81,7 @@ public class IDB {
 		SqlFactory factory = new SqlFactory();
 		IDBConnection connection = factory.createConnection("root", "a123456");
 		System.out.println(connection.name);
+		System.out.println(connection.getName());
 		IDBCommand command = factory.createCommand();
 		command.connection(connection);
 		IDBReader reader = factory.createReader();
